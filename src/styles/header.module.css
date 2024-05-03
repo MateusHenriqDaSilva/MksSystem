@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&display=swap');
+.header{
+    display: flex;
+    height: 80px;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    background: white;
+    color: black;
+    font-family: "MuseoModerno", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid black;
+    box-shadow: 3px 3px 10px rgb(127, 127, 127);
+}
+
+.title{
+    width: 600px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.icon{
+    display: flex;
+    font-size: 80px;
+    justify-content: center;
+    background: white;
+    color: #3a7ca5;
+}
+
+.iconCart{
+    display: flex;
+    justify-content: right;
+    font-size: 40px;
+    padding: 0px 20px;
+}
+
+.trace1{
+    color: white;
+    width: 100%;
+    padding: 1px;
+    width: 300px;
+    background: white;
+}
+
+.trace2{
+    color: white;
+    width: 100%;
+    padding: 1px;
+    background: white;
+    width: 300px;
+}
+
+.trace3{
+    color: white;
+    width: 100%;
+    padding: 1px;
+    background: white;
+    width: 300px;
+}

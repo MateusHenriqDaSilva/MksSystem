@@ -1,15 +1,26 @@
-// Home.tsx
-"use client";
-import styles from '../styles/home.module.css'
-import React, { useState, useEffect } from 'react';
-import Cart from '../class/cart'
-import { CartContext } from '@/component/CartContext'
-import Header from "@/component/Header"
-import Main from "@/component/Main"
+// Context
+import Cart from '@/class/cart';
+import React, { createContext, useState, useEffect, useContext, ReactNode } from 'react';
 import Product from '../interface/Product'
 
-export default function App() {
-  const [cart, setCart] = useState(new Cart()); // Crie uma nova instância da classe Cart
+interface CartContextProps {
+  cart: Cart;
+  addToCart: (product: Product) => void;
+  setCart: (cart: Cart) => void; // Adicione setCart à interface CartContextProps
+}
+
+export const CartContext = createContext<CartContextProps>({
+  cart: new Cart(),
+  addToCart: () => { },
+  setCart: () => { }, // Adicione setCart ao valor inicial do contexto
+});
+
+interface CartProviderProps {
+  children: ReactNode;
+}
+
+export const CartProvider: React.FC<CartProviderProps> = ({ children }) => {
+  const [cart, setCart] = useState(new Cart());
 
   // Quando o componente é montado, carregue o carrinho do localStorage
   useEffect(() => {
@@ -30,15 +41,15 @@ export default function App() {
     setCart(newCart); // Atualize o estado do carrinho
     localStorage.setItem('cart', JSON.stringify(newCart)); // Salve o novo carrinho no localStorage
   };
-  
-  const value = { cart, addToCart, setCart }; // Inclua setCart no valor para o Provider
 
   return (
-    <CartContext.Provider value={value}> {/* Passe o valor para o Provider */}
-      <div className={styles.home}>
-        <Header />
-        <Main />
-      </div>
+    <CartContext.Provider value={{ cart, addToCart, setCart }}> {/* Passe setCart para o Provider */}
+      {children}
     </CartContext.Provider>
-  )
+  );
+};
+
+export const useCart = () => {
+  const context = useContext(CartContext);
+  return context;
 }

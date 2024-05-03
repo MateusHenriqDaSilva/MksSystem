@@ -1,0 +1,246 @@
+.container {
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  text-align: center;
+}
+
+.containerRow {
+  display: flex;
+  padding: 0px 20px;
+}
+
+.colLeft {
+  height: 600px;
+  padding: 20px 0px;
+  width: 60%;
+  border-radius: 10px;
+}
+
+.colRight {
+  border-radius: 10px;
+  padding: 20px;
+  height: 600px;
+  width: 40%;
+  justify-content: center;
+  align-items: center;
+}
+
+.colTopRight {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  height: 28%;
+  border-radius: 10px;
+  border: 1px solid rgb(174, 174, 174);
+  box-shadow: 0px 0px 10px rgb(169, 169, 169);
+}
+
+.colBottomRight {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 0px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  text-align: center;
+  height: 70%;
+  border: 1px solid rgb(174, 174, 174);
+  box-shadow: 0px 0px 10px rgb(169, 169, 169);
+}
+
+.finish {
+  border: 3px solid lightblue;
+  background: white;
+  color: black;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background 0.5s;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0px 0px 10px rgb(169, 169, 169);
+}
+
+.finish:hover {
+  color: black;
+}
+
+.containerButton {
+  display: flex;
+  padding: 20px;
+  justify-content: center;
+}
+
+.finish {
+  padding: 30px
+}
+
+.finish::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: lightblue;
+  transition: left 0.3s;
+}
+
+.finish:hover::before {
+  left: 100%;
+}
+
+.label {
+  padding: 5px 0px;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.labelTotal {
+  font-size: 30px;
+}
+
+.itemCart {
+  display: flex;
+  flex-direction: column;
+  height: 92%;
+  overflow: auto;
+  max-height: 600px;
+  box-shadow: 0px 0px 10px rgb(169, 169, 169);
+  border: 1px solid rgb(174, 174, 174);
+}
+
+.titulo {
+  padding: 9px;
+  border-bottom: 1px solid rgb(149, 149, 149);
+  box-shadow: 0px 0px 3px rgb(169, 169, 169);
+  border: 1px solid rgb(174, 174, 174);
+}
+
+.item {
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  border-bottom: 1px solid rgb(149, 149, 149);
+}
+
+.labelItem {
+  font-size: 20px;
+  padding: 0px 10px;
+}
+
+.imgItem {
+  padding: 0px 10px;
+  height: 80px;
+}
+
+.labelPrice {
+  font-size: 24px;
+  font-weight: bold;
+  padding: 0px 10px;
+}
+
+.containerImg {
+  width: 100px;
+}
+
+.containerName{
+  width: 200px;
+  padding: 0px 5px;
+}
+
+.containerPrice{
+  padding: 0px 10px;
+  width: 140px;
+}
+
+.containerCount{
+  width: 100px;
+}
+
+.labelCount {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.containerCount {
+  display: flex;
+  padding: 0px 0px;
+  height: 30px;
+  border-bottom: 1px solid rgb(149, 149, 149);
+}
+
+.iconCount {
+  font-size: 25px;
+  padding: 0px 10px;
+}
+
+.count {
+  font-size: 26px;
+  padding: 0px 0px;
+}
+
+.containerDelete{
+  margin: 0px 10px;
+  display: flex;
+  padding: 7px 20px;
+  background: rgb(255, 222, 222);
+  box-shadow: 0px 0px 10px rgb(169, 169, 169);
+  border: 1px solid rgb(174, 174, 174);
+  cursor: pointer;
+}
+
+.delete{
+  color: rgb(84, 21, 21);
+}
+
+.containerDelete:hover{
+  color: rgb(84, 21, 21);
+  background: rgb(255, 222, 222);
+  box-shadow: 0px 0px 3px rgb(255, 140, 140);
+  border: 1px solid rgb(255, 148, 148);
+}
+
+.empty{
+  height: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.emptyLabel{
+  font-size: 30px;
+  color: rgb(95, 95, 95);
+}
+
+.emptyIcon{
+  padding: 20px;
+  font-size: 50px;
+  color: rgb(95, 95, 95);
+}
+
+.containerSell{
+  width: 92%;
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  border-bottom: 1px solid rgb(174, 174, 174);
+}
+
+.imgSell{
+  width: 60px;
+  height: 60px;
+}
+
+.labelSell{
+  padding: 0px 20px;
+  font-size: 20px;
+
+}
+
+.priceSell{
+  font-size: 20px;
+  color: rgb(22, 15, 123);
+}
