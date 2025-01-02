@@ -1,0 +1,32 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    background: whitesmoke;
+}
+
+.postagens{
+    display: flex;
+    background: whitesmoke;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0px 320px;
+}
+
+@media only screen and (max-width: 450px) {
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        padding-bottom: 30px;
+        width: 100%;
+        text-align: center;
+    }
+}

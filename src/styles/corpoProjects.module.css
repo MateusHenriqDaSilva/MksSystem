@@ -1,0 +1,37 @@
+.containerGlobal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    width: 100%;
+}
+
+.containerCardSession{
+    padding: 20px;
+    width: 100%;
+    font-size: 12px;
+    text-align: center;
+    justify-content: center;
+    border: 1px solid rgb(202, 202, 202);
+    border-radius: 6px;
+}
+
+.containerCardSession:hover{
+    width: 100%;
+    font-size: 12px;
+    text-align: center;
+    justify-content: center;
+    box-shadow: 3px 3px 3px rgb(122, 255, 88);
+    border: 1px solid rgb(138, 255, 103);
+    border-radius: 6px;
+}
+
+.containerCabecalho{
+    font-size: 15px;
+    width: 100%;
+}
+
+.containerCorpo{
+    padding: 10px;
+    width: 100%;
+}

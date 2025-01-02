@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap');
+
+.containerItem {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    background: white;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px;
+    box-shadow: 0px 3px 3px black;
+}
+
+.containerItem:hover {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    background: white;
+    margin: 20px;
+    box-shadow: 0px 3px 3px rgb(0, 187, 0);
+}
+
+.title {
+    color: black;
+    font-size: 13px;
+    padding: 0px 20px;
+}
+
+.description {
+    font-size: 12px;
+    color: black;
+    font-family: 'Rajdhani', sans-serif;
+    padding: 0px 20px;
+}
+
+@media (max-width: 768px) {
+    .containerItem {
+        width: 200px;
+        height: 250px;
+        flex-wrap: wrap;
+    }
+
+    .title {
+        font-size: 11px;
+    }
+
+    .description {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .containerItem {
+        width: 150px;
+        height: 250px;
+        flex-wrap: wrap;
+    }
+
+    .title {
+        font-size: 9px;
+    }
+
+    .description {
+        font-size: 8px;
+    }
+}

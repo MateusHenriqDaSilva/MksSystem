@@ -1,0 +1,23 @@
+.container{
+
+}
+
+.title{
+    
+}
+
+.listaSelecionado{
+    list-style: none;
+}
+
+.selecionado{
+    padding: 3px 0px;
+    list-style: none;
+    border-bottom: 1px solid rgb(197, 197, 197);
+}
+
+.selecionado:hover{
+  padding: 3px 0px;
+  list-style: none;
+  border-bottom: 1px solid red
+}

@@ -1,0 +1,32 @@
+.botaoWpp {
+    text-decoration: none;
+    color: #eee;
+    display: inline-block;
+    background-color: #49785b;
+    font-weight: bold;
+    border: none;
+    padding: 5px 10px;
+    box-shadow: 0px 3px 3px black;
+}
+
+.botao-wpp:hover {
+    background-color: darken(#4a9c68, 5%);
+}
+
+.botao-wpp:focus {
+    background-color: darken(#4a9c68, 15%);
+}
+
+@media (max-width: 768px) {
+    .botaoWpp {
+        padding: 4px 8px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .botaoWpp {
+        padding: 3px 6px;
+        font-size: 12px;
+    }
+}

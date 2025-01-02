@@ -1,0 +1,540 @@
+.containerGlobal {
+    height: 100vh;
+    width: 100%;
+    padding: 0px;
+    background: #d2d2d2;
+    color: black;
+}
+
+.containerMotivacional {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 0px 10px;
+    align-items: center;
+    margin: 0px 5px 5px 5px;
+    background: white;
+}
+
+.titulo {
+    font-size: 16px;
+}
+
+.fraseDiaria {
+    font-size: 20px;
+}
+
+.containerInfo {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 10px;
+    margin: 0px 0px 5px 0px;
+    background: white;
+    justify-content: right;
+    align-items: center;
+    text-align: center;
+}
+
+.iconLabel {
+    font-size: 9px;
+}
+
+.icon {
+    display: flex;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.containerInfo:hover {
+    background: rgb(24, 170, 255);
+    cursor: pointer;
+}
+
+.containerHeader {
+    display: flex;
+    margin: 0px;
+    width: 100%;
+}
+
+.containerContent {
+    display: flex;
+    width: 100%;
+    height: 48%;
+}
+
+.containerCenter {
+    display: flex;
+    width: 75%;
+    background: white;
+    padding: 0px;
+    margin-right: 5px;
+    margin-left: 5px;
+    justify-content: right;
+}
+
+.containerRight {
+    padding: 0px;
+    margin-right: 5px;
+    width: 35%;
+    background: white;
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+.containerCurses {
+    display: flex;
+    height: 31%;
+    margin: 0px 5px 0px 5px;
+    background: white;
+}
+
+.sair {
+    margin-right: 5px;
+}
+
+.sair:hover {
+    margin-right: 5px;
+}
+
+.curse {
+    position: relative;
+    width: 15%;
+    height: 90%;
+    padding: 0px;
+    margin-right: 5px;
+    transition: all 0.3s ease;
+}
+
+.curse:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.draggableSquare {
+    position: absolute;
+    width: 120px;
+    height: 60px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.997);
+    cursor: move;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s ease;
+}
+
+.draggableSquare:hover {
+    background-color: #e0e0e0;
+}
+
+.tituloCurse,
+.descriptionCurse {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.2;
+}
+
+.tituloFluxo {
+    display: flex;
+    justify-content: left;
+    padding: 0px;
+    color: #d2d2d2;
+    text-align: left;
+}
+
+.cursoImage {
+    height: 100%;
+    width: 100%;
+}
+
+.containerSub {
+    display: flex;
+    padding: 0px;
+    margin: 0px 0px;
+}
+
+.menuOptionLeft {
+    height: 10%;
+    width: 75%;
+    background: white;
+    margin-left: 5px;
+    padding: 0px;
+}
+
+.menuOptionRight {
+    height: 10%;
+    margin: 0px 5px;
+    padding: 0px;
+    width: 35%;
+    background: white;
+}
+
+.selector {
+    padding: 6px 30px;
+    background: red;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    margin-bottom: 2px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #333;
+    transition: background-color 0.3s ease;
+}
+
+.selector:hover {
+    background-color: #e0e0e0;
+}
+
+.selector:focus {
+    outline: none;
+    border: 1px solid rgb(186, 186, 186);
+}
+
+.tituloTarefa {
+    color: #333;
+    font-size: 18px;
+    padding: 0px 10px;
+    font-weight: bold;
+}
+
+.descricaoTarefa {
+    font-size: 16px;
+    padding: 0px 10px;
+    color: #777;
+}
+
+.tarefa {
+    position: relative;
+    height: 10%;
+    width: 100%;
+    padding: 10px 0px;
+    margin-bottom: 0px;
+    border: 1px solid rgb(201, 201, 201);
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.tarefa:hover {
+    background-color: #e0e0e0;
+}
+
+.menuOptionRight {
+    display: flex;
+}
+
+.iconeAdd {
+    font-size: 30px;
+    color: black;
+    padding: 1px;
+}
+
+.iconeDelete {
+    font-size: 20px;
+    padding: 5px;
+    color: black;
+    margin: 0px 2px;
+}
+
+.iconeEdit {
+    font-size: 30px;
+    color: black;
+    margin: 0px 2px;
+}
+
+.modalTarefa {
+    display: flex;
+    height: 80%;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.formularioTarefa {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+}
+
+.tarefaInput {
+    font-size: 16px;
+    padding: 10px;
+    background: whitesmoke;
+    border: none;
+    margin: 5px 0px;
+    border: 1px solid rgb(186, 186, 186);
+}
+
+.tarefaInput:focus {
+    outline: none;
+    border: 1px solid rgb(186, 186, 186);
+}
+
+.botao {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    margin: 0px 0px;
+    background: #D2D2D2;
+}
+
+.descricaoInput {
+    padding: 20px 10px;
+    font-size: 16px;
+    background: whitesmoke;
+    border: none;
+    outline: none;
+    border: 1px solid rgb(186, 186, 186);
+}
+
+.dataInput {
+    width: 50%;
+    padding: 20px 10px;
+    background: whitesmoke;
+    margin: 5px 0px;
+    font-size: 16px;
+    border: 1px solid rgb(186, 186, 186);
+}
+
+.dataInput:focus {
+    outline: none;
+    border: 1px solid rgb(186, 186, 186);
+}
+
+.horaInput {
+    width: 50%;
+    padding: 20px 10px;
+    background: whitesmoke;
+    margin: 5px 0px;
+    font-size: 16px;
+    border: 1px solid rgb(186, 186, 186);
+}
+
+.horaInput:focus {
+    outline: none;
+    border: 1px solid rgb(186, 186, 186);
+}
+
+.espacoTempo {
+    display: flex;
+}
+
+.ativo {
+    background: #D2D2D2;
+}
+
+.containerTarefa {
+    display: flex;
+    flex-direction: column;
+    padding: 4px;
+    margin: 0px;
+}
+
+.selected {
+    border: 1px solid #6e2a0b;
+}
+
+.label {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: rgb(147, 147, 147);
+}
+
+.checkInput {
+    width: 20px;
+    height: 10%;
+    border-radius: 4px;
+    margin-right: 5px;
+    margin-left: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.checkInput:checked {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.checkInput::before {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10%;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.checkInput:checked::before {
+    opacity: 1;
+}
+
+.checkInput:hover {
+    background-color: #eaeaea;
+}
+
+.descricaoTarefaDias {
+    font-size: 16px;
+    padding: 0px 10px;
+    color: #777;
+    margin-top: 2px;
+}
+
+.cadeadoIcon {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    font-size: 40px;
+    color: #88acff;
+    z-index: 1;
+}
+
+.price {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    font-size: 20px;
+    background: rgb(249, 194, 60);
+    font-weight: bold;
+    padding: 3px 20px;
+    box-shadow: 0px 0px 8px black;
+    color: black;
+}
+
+.concluido {
+    display: flex;
+    justify-content: right;
+    width: 100%;
+}
+
+.buttonConcluido {
+    padding: 4px;
+    border: none;
+    background-color: #4CAF50;
+    color: #ffffff;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 3px 3px black;
+}
+
+.buttonConcluido:hover {
+    background-color: #45a049;
+}
+
+.activeButton {
+    transform: translateY(2px);
+    background-color: #2d4b2f;
+    box-shadow: none;
+}
+
+.concluir {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #6c846d;
+    color: #ffffff;
+    font-size: 14px;
+    border: none;
+    z-index: 1;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    padding: 5px;
+}
+
+.concluir:hover {
+    background-color: #45a049;
+    padding: 5px;
+}
+
+.apagar {
+    display: flex;
+    align-items: self-end;
+    justify-content: center;
+    padding: 20px;
+    font-size: 30px;
+}
+
+.menuOptionCurses {
+    margin: 5px 5px 0px 5px;
+    background: white;
+}
+
+.tipoCursos {
+    display: flex;
+    list-style: none;
+}
+
+.listaCurso {
+    font-size: 20px;
+    padding: 10px 30px;
+    cursor: pointer;
+}
+
+.seusCurso {
+    color: rgb(197, 197, 197);
+    font-size: 30px;
+}
+
+.meusCursosContainer {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    height: 100%;
+}
+
+.ativo {
+    background: rgb(210, 210, 210);
+}
+
+/* Responsivo para Tablets */
+@media (max-width: 768px) {
+    .containerCenter, .containerRight {
+        width: 100%;
+    }
+
+    .curse {
+        width: 25%;
+    }
+}
+
+/* Responsivo para Celulares */
+@media (max-width: 480px) {
+    .containerMotivacional {
+        flex-direction: column;
+    }
+
+    .containerCenter, .containerRight {
+        width: 100%;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .curse {
+        width: 50%;
+    }
+
+    .containerInfo, .titulo, .fraseDiaria, .icon {
+        font-size: smaller;
+    }
+}
+

@@ -1,0 +1,52 @@
+.containerGlobal {
+  display: flex;
+  justify-content: center;
+}
+
+/* Estilo para centralizar o modal */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Adicione esta linha para centralizar verticalmente */
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Fundo escurecido para destacar o modal */
+}
+
+/* Estilo para o conteúdo do modal */
+/* Estilo para o conteúdo do modal */
+.conteudo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  padding: 20px;
+  z-index: 1;
+  height: 80%;
+  width: 80%;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+  /* Adicione esta linha para posicionar o botão */
+}
+
+/* Estilo para o botão "Fechar" */
+.fechar {
+  position: absolute;
+  top: 10px;
+  /* Ajuste a posição vertical conforme necessário */
+  right: 10px;
+  /* Posiciona o botão no canto superior direito */
+  color: black;
+  /* Adicione uma cor de texto para o botão */
+  border: none;
+  cursor: pointer;
+  width: 20px;
+}

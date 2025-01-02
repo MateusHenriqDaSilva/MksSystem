@@ -1,5 +1,4 @@
 import styles from '../styles/skeleton.module.css';
-import Header from './Header';
 
 export default function Skeleton() {
     return (

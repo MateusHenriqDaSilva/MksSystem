@@ -1,0 +1,44 @@
+.ContainerGlobal {
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    color: black;
+}
+
+.borda{
+    border-bottom: 1px solid rgb(197, 197, 197);
+}
+
+.link {
+    cursor: pointer;
+    margin: 20px;
+    justify-content: center;
+    padding: 0px 5px;
+    align-items: center;
+    color: black;
+    text-align: center;
+}
+
+@media only screen and (max-width: 400px) {
+    .ContainerGlobal {
+        display: flex;
+        height: 30px;
+        padding: 0px 120px 20px 120px;
+        font-size: 12px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .link {
+        cursor: pointer;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+}

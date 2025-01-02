@@ -1,0 +1,42 @@
+.estilo.label {
+    font-size: 15px;
+}
+
+.cartaoEspaco {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 80px;
+}
+
+.cartao {
+    height: 360px;
+    width: 220px;
+    margin: 0px 0px;
+    align-items: center;
+    text-align: center;
+    border: 1px white solid;
+    border-radius: 10px;
+    background: black;
+    cursor: pointer;
+}
+
+.cartao:hover {
+    height: 360px;
+    width: 220px;
+    margin: 0px 0px;
+    align-items: center;
+    text-align: center;
+    border: 1px white solid;
+    border-radius: 10px;
+    background: black;
+    cursor: pointer;
+    border-bottom: 4px solid rgb(170, 255, 170);
+}
+
+.cartaoLetras {
+    font-size: 22px;
+    color: white;
+}
+

@@ -1,44 +1,49 @@
-// Home.tsx
 "use client";
-import styles from '../styles/home.module.css'
-import React, { useState, useEffect } from 'react';
-import Cart from '../class/cart'
-import { CartContext } from '@/component/CartContext'
-import Header from "@/component/Header"
-import Main from "@/component/Main"
-import Product from '../interface/Product'
+// Home.tsx
+import { PiGooglePlayLogoDuotone } from "react-icons/pi";
+import React, { useState } from "react";
+import Corpo from "@/component/paginaInicial/Corpo";
+import Cabecalho from "@/component/paginaInicial/Cabecalho";
+import styles from '../styles/principal.module.css';
 
 export default function App() {
-  const [cart, setCart] = useState(new Cart()); // Crie uma nova instância da classe Cart
+  const [coletarEmail, setColetarEmail] = useState('');
 
-  // Quando o componente é montado, carregue o carrinho do localStorage
-  useEffect(() => {
-    const savedCart = localStorage.getItem('cart');
-    if (savedCart) {
-      try {
-        const parsedCart = JSON.parse(savedCart);
-        setCart(new Cart(parsedCart.items)); // Certifique-se de criar uma nova instância de Cart com os itens
-      } catch (e) {
-        console.error('Falha ao analisar o carrinho:', e);
-      }
+  async function cadastrarEmail() {
+    try {
+      const formData = new FormData();
+      formData.append('email', coletarEmail);
+
+      const response = await fetch('/api/coletarEmails', {
+        method: 'POST',
+        body: formData,
+      });
+
+      const data = await response.json();
+      console.log(data);
+
+      // Limpar o campo de entrada após o envio bem-sucedido
+      setColetarEmail(''); // Aqui estamos limpando o campo de e-mail
+    } catch (error) {
+      console.error('Erro ao inserir email no banco de dados', error);
+      setColetarEmail('');
     }
-  }, []);
-
-  const addToCart = (product: Product) => {
-    let newCart = new Cart([...cart.items]); // Crie uma nova instância de Cart com os itens existentes
-    newCart.add(product); // Adicione o produto ao novo carrinho
-    setCart(newCart); // Atualize o estado do carrinho
-    localStorage.setItem('cart', JSON.stringify(newCart)); // Salve o novo carrinho no localStorage
-  };
-  
-  const value = { cart, addToCart, setCart }; // Inclua setCart no valor para o Provider
+  }
 
   return (
-    <CartContext.Provider value={value}> {/* Passe o valor para o Provider */}
-      <div className={styles.home}>
-        <Header />
-        <Main />
+    <div className={styles.containerTotal}>
+      <Cabecalho titulo="Mahends" />
+      <Corpo />
+      <div className={styles.containerRodape}>
+        <input
+          className={styles.email}
+          type="email"
+          placeholder="Digite seu e-mail, fique por dentro de notícias atualizadas, cursos inovadores, bônus exclusivos e projetos empolgantes"
+          value={coletarEmail}
+          onChange={(e) => setColetarEmail(e.target.value)}
+        />
+        <div onClick={cadastrarEmail} className={styles.coletar}><PiGooglePlayLogoDuotone /></div>
       </div>
-    </CartContext.Provider>
-  )
+    </div>
+  );
 }

@@ -1,0 +1,80 @@
+.containerGlobal {
+    height: 100%;
+    width: 100%;
+    background: white;
+}
+
+.containerHeader {
+    display: flex;
+    margin: 0px;
+    width: 100%;
+}
+
+.containerSub {
+    display: flex;
+}
+
+.menuOptionLeft {
+    height: 30px;
+    width: 30px;
+    width: 75%;
+    background: #d2d2d2;
+    margin-left: 10px;
+}
+
+.menuOptionRight {
+    height: 30px;
+    width: 30px;
+    margin: 0px 10px;
+    width: 35%;
+    background: #d2d2d2;
+}
+
+.containerContent {
+    display: flex;
+    width: 100%;
+    height: 400px;
+}
+
+.containerCenter {
+    width: 75%;
+    background: #d2d2d2;
+    padding: 0px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.containerRight {
+    padding: 0px;
+    margin-right: 10px;
+    width: 35%;
+    background: #d2d2d2;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.containerCurses {
+    display: flex;
+    height: 100%;
+    margin: 10px;
+    background: #d2d2d2;
+}
+
+.containerMotivacional {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 10px;
+    height: 50px;
+    margin: 10px;
+    background: #d2d2d2;
+}
+
+.curse {
+    position: relative; 
+    width: 200px;
+    height: 200px;
+    padding: 0px;
+    margin-right: 5px;
+    transition: all 0.3s ease;
+}

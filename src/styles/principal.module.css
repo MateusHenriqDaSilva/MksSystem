@@ -1,0 +1,66 @@
+.containerTotal {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  /* Ajuste a altura para a altura da janela de visualização */
+  padding: 0px;
+  margin: 0px;
+  background: whitesmoke;
+  justify-content: center;
+}
+
+.containerRodape {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+  justify-content: center;
+  align-items: center;
+  background: whitesmoke;
+}
+
+.email {
+  padding: 20px;
+  width: 48%;
+  border: 1px solid rgb(154, 154, 154);
+  font-size: 11px;
+  transition: border 0.3s ease;
+  border-radius: 5px;
+  background: whitesmoke;
+}
+
+.email:hover {
+  border-radius: 5px;
+  border: 1px solid #00B2DF;
+}
+
+.email:focus {
+  border-radius: 5px;
+  border: 1px solid #00B2DF;
+  outline: none;
+  color: black;
+}
+
+.coletar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 4%;
+  color: black;
+  background: rgb(255, 255, 255);
+  cursor: pointer;
+  box-shadow: 2px 2px 4px black;
+}
+
+.coletar:hover{
+  height: 40px;
+  width: 4%;
+  color: black;
+  cursor: pointer;
+  border: 1px solid black;
+  box-shadow: 0px 0px 0px black;
+}
+

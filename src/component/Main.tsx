@@ -1,4 +1,4 @@
-import { useContext, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import Skeleton from "./Skeleton";
 import styles from '../styles/main.module.css'
 import { FaBoltLightning } from "react-icons/fa6";
